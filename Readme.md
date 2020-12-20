@@ -38,7 +38,12 @@ Layout a)| Layout b)
 ![Set-Up a)](img/a_arandr.png)| ![Set-Up b)](img/b_arandr.png)
 
 At first I was still changing the HDMI cable between my vertical monitor and my beamer. It was possible to find out which display is connected and and activate the right profile automatically (loosely based on [this](https://askubuntu.com/questions/630202/run-script-when-monitor-is-connected)). **But I had to unplug/plug-in the HDMI cable at my laptop everytime, for the system to get the new devicename.**
-That annoyed me much, so I bought a HDMI-switch and some short HDMI cables. The problem here is, that I **still have to re-connect the HDMI cable to the laptop every time,** because the system doesnt register that the device has changed. That basically destroys all the convenience I was trying to achieve and **I didn't find any way to automate this.**
+That annoyed me much, so I bought a HDMI-switch and some short HDMI cables. My cable setup looks like this:
+
+![Cable Set-Up](img/setup.png)
+*(This includes my PS4 which is not mentioned here anywhere else, because it is irrelevant to this project. But unexpectedly this complicated set-up works very well.)
+
+The problem here is, that I **still have to re-connect the HDMI cable to the laptop every time,** because the system doesnt register that the device has changed. That basically destroys all the convenience I was trying to achieve and **I didn't find any way to automate this.**
 To reduce the physical wear on my USB-C and HDMI ports, I started opening [arandr](https://christian.amsuess.com/tools/arandr/) manually and activating the right profile, ALL THE TIME.
 **So I wrote a GNOME extension to make this easier for me**
 
@@ -104,4 +109,5 @@ sudo apt install gnome-tweaks && gnome-tweaks
 ## DONE
 
 You should have an icon in the top panel with a dropdown menu of all your profiles now: **Just click on one to activate.**
+
 ![Panel Menu](img/panel_menu.png)
