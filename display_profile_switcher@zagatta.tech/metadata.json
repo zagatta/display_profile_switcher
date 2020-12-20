@@ -1,0 +1,6 @@
+{
+    "name": "display_profile_switcher",
+    "uuid": "display_profile_switcher@zagatta.tech",
+    "shell-version": ["3.38"], 
+    "description": "Switch arandr profiles"
+}
